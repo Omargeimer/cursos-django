@@ -1,0 +1,28 @@
+{% extends "CursosDjango/encabezado.html" %}
+{% block titulo %} CONTACTO {% endblock%}
+{% block contenido %}
+
+<div style="margin-left: 35%; box-shadow: 2px; margin-top: 20px;">
+    <h1 style="margin: 20px;">Página de contacto</h1>
+    <h2>Contactanos a travez del siguiente formulario:</h2>
+    <p>Nombre:<input type="text" name="nombre"></p>
+    <p>Correo:<input type="email" name="correo"></p>
+    <p>Curso:
+        <select name="curso">
+            <option value="BD">Base de Datos</option>
+            <option value="PY">Python Avanzado</option>
+            <option value="MIG">Migraciones</option>
+            <option value="INT">Interfaces</option>
+            <option value="PROG">Programación</option>
+            <option value="DFLU">Diagramas de flujo</option>
+        </select>
+    </p>
+    <P>
+        Comentarios:
+        <textarea name="comentarios" cols="50" rows="10">
+        </textarea>
+    </P>
+    <p><input type="button" name="enviar" value="Enviar"></p>
+</div>
+
+{% endblock %}
