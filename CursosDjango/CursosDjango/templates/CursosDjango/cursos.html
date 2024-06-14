@@ -1,16 +1,17 @@
-{% extends "CursosDjango/encabezado.html" %}
+{% extends "CursosDjango/menu.html" %}
 {% block titulo %} CURSOS {% endblock%}
 {% block contenido %}
 
-<h1>Cursos Disponibles: </h1>
-
-<ul style="margin-left: 45%; margin-top: 50px;">
-    <li>Base de Datos</li>
-    <li>Python Avanzado</li>
-    <li>Migraciones</li>
-    <li>Interfaces</li>
-    <li>Programación</li>
-    <li>Diagramas de flujo</li>
-</ul>
+<div class="cursos-container">
+    <h1>Cursos Disponibles:</h1>
+    <ul class="cursos-lista">
+        <li>Base de Datos</li>
+        <li>Python Avanzado</li>
+        <li>Migraciones</li>
+        <li>Interfaces</li>
+        <li>Programación</li>
+        <li>Diagramas de flujo</li>
+    </ul>
+</div>
 
 {% endblock %}
