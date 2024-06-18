@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
@@ -30,7 +29,8 @@ body {
 }
 
 
-/* Estilos para el contenedor de contacto */
+
+/* Estilos para el contenedor principal */
 .principal-container {
     max-width: 800px;
     margin: 50px auto;
@@ -45,7 +45,6 @@ body {
     color: #6200ea;
     padding-bottom: 15px;
 }
-
 
 /* Estilos para el contenedor de contacto */
 .contact-container {
@@ -138,4 +137,65 @@ body {
 .cursos-lista li:hover {
     background-color: #bdbdbd;
     cursor: pointer;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1200px) {
+    .principal-container,
+    .contact-container,
+    .cursos-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .principal-container,
+    .contact-container,
+    .cursos-container {
+        padding: 30px;
+    }
+
+    .form-horizontal .control-label,
+    .form-horizontal .form-control {
+        width: 100%;
+        display: block;
+    }
+
+    .form-actions {
+        text-align: center;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cursos-lista {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .principal-container,
+    .contact-container,
+    .cursos-container {
+        padding: 20px;
+    }
+
+    .form-horizontal .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-actions .btn {
+        padding: 10px;
+    }
 }

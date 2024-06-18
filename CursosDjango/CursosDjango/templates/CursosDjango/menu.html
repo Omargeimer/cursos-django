@@ -13,9 +13,7 @@
     <!-- MENÚ -->
     <p class="menu">
         <a href="{% url 'Principal' %}" class="{% if request.resolver_match.url_name == 'Principal' %}active{% endif %}">Home</a>
-        |
         <a href="{% url 'Cursos' %}" class="{% if request.resolver_match.url_name == 'Cursos' %}active{% endif %}">Cursos</a>
-        |
         <a href="{% url 'Contacto' %}" class="{% if request.resolver_match.url_name == 'Contacto' %}active{% endif %}">Contáctanos</a>
     </p>
 
