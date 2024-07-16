@@ -1,15 +1,15 @@
 {% extends "CursosDjango/menu.html" %}
-{% block titulo %} CURSOS {% endblock%}
+{% block titulo %} Actividades {% endblock%}
 
 {% block contenido %}
 
 <table>
     <div class="cursos-container">
-        <h1>Cursos Disponibles:</h1>
+        <h1>Actividades Disponibles:</h1>
         <ul class="cursos-lista">
-            {% for curso in cursos_list %}
+            {% for actividad in act_list %}
             <li>
-                {{curso.carrera}} : {{curso.nombre}} - <a href="{{curso.web}}">{{curso.web}}</a>
+                {{actividad.descripcion}} : {{actividad.curso}}
             </li>
             {% endfor %}
         </ul>

@@ -1,0 +1,201 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #6200ea;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu a:active {
+    color: #ff6347;
+    text-decoration: solid;
+}
+
+
+
+/* Estilo para el contenedor principal */
+.principal-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.principal-container h1 {
+    text-align: center;
+    color: #6200ea;
+    padding-bottom: 15px;
+}
+
+/* Estilos para el contenedor de contacto */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-container h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para los formularios */
+.form-horizontal .form-group {
+    margin-bottom: 15px;
+}
+
+.form-horizontal .control-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-horizontal .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-horizontal .form-control:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.3);
+}
+
+.form-actions {
+    text-align: right;
+}
+
+.form-actions .btn {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form-actions .btn:hover {
+    background-color: #3700b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la lista de cursos */
+.cursos-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cursos-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cursos-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.cursos-lista li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cursos-lista li:hover {
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+    .principal-container,
+    .contact-container,
+    .cursos-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .principal-container,
+    .contact-container,
+    .cursos-container {
+        padding: 30px;
+    }
+
+    .form-horizontal .control-label,
+    .form-horizontal .form-control {
+        width: 100%;
+        display: block;
+    }
+
+    .form-actions {
+        text-align: center;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cursos-lista {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .principal-container,
+    .contact-container,
+    .cursos-container {
+        padding: 20px;
+    }
+
+    .form-horizontal .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-actions .btn {
+        padding: 10px;
+    }
+}
